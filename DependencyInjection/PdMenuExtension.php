@@ -30,7 +30,7 @@ class PdMenuExtension extends Extension implements CompilerPassInterface
     /**
      * {@inheritdoc}
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         // Load Menu Service Locator
         $container->registerForAutoconfiguration(MenuInterface::class)->addTag('menus');
@@ -47,7 +47,7 @@ class PdMenuExtension extends Extension implements CompilerPassInterface
         $loader->load('services.yml');
     }
 
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
         $menuIds = [];
         foreach ($container->findTaggedServiceIds('menus') as $id => $tags) {

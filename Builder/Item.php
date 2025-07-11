@@ -55,7 +55,7 @@ class Item implements ItemInterface
         return $this->id;
     }
 
-    public function setId($id = null): ItemInterface
+    public function setId(?string $id = null): ItemInterface
     {
         $this->id = $id;
 
@@ -185,7 +185,7 @@ class Item implements ItemInterface
         return $this;
     }
 
-    public function getExtra(string $name, $default = false)
+    public function getExtra(string $name, $default = false): mixed
     {
         if (\is_array($this->extra) && isset($this->extra[$name])) {
             return $this->extra[$name];
@@ -194,7 +194,7 @@ class Item implements ItemInterface
         return $default;
     }
 
-    public function setExtra(string $name, $value): ItemInterface
+    public function setExtra(string $name, mixed $value): ItemInterface
     {
         if (\is_array($this->extra)) {
             $this->extra[$name] = $value;
@@ -278,22 +278,22 @@ class Item implements ItemInterface
         return $this->parent ? $this->parent->getLevel() + 1 : 0;
     }
 
-    public function offsetExists($childId)
+    public function offsetExists(mixed $childId): bool
     {
         return isset($this->child[$childId]);
     }
 
-    public function offsetGet($childId)
+    public function offsetGet(mixed $childId): mixed
     {
         return $this->child[$childId];
     }
 
-    public function offsetSet($childId, $order)
+    public function offsetSet(mixed $childId, mixed $order): void
     {
-        return $this->addChild($childId, $order);
+        $this->addChild($childId, $order);
     }
 
-    public function offsetUnset($childId)
+    public function offsetUnset(mixed $childId): void
     {
         if ($this->offsetExists($childId)) {
             unset($this->child[$childId]);

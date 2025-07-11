@@ -1,7 +1,7 @@
 {
-  "name": "appaydin/pd-menu",
+  "name": "saldanhakun/pd-menu",
   "description": "Symfony Simple Menu Bundle",
-  "homepage": "https://github.com/appaydin/pd-menu",
+  "homepage": "https://github.com/saldanhakun/pd-menu",
   "type": "symfony-bundle",
   "license": "MIT",
   "keywords": [
@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "php": ">=8.0.0",
+    "php": "^8.2",
     "twig/twig": "*",
     "symfony/event-dispatcher": "*"
   },

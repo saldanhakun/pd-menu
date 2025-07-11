@@ -1,10 +1,19 @@
 # pdMenu Bundle
-Simple fast object-oriented menu maker for Symfony 5
+Simple fast object-oriented menu maker for Symfony 6 and 7
 
-[![Packagist](https://img.shields.io/packagist/dt/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
-[![Github Release](https://img.shields.io/github/release/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
-[![license](https://img.shields.io/github/license/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
+[![Packagist](https://img.shields.io/packagist/dt/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![Github Release](https://img.shields.io/github/release/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![license](https://img.shields.io/github/license/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+
+
+Disclaimer
+---
+
+The original implementation stagnated in 2021, but due to a few old (and upgraded) projects still using this
+menu, a fork was necessary to adjust code to conform with later PHP8, Symfony 6.4 and 7.2. The namespaces
+were not changed, in expectation of one day merging back into the original repository, with BC in mind.
+
 
 Installation
 ---
@@ -15,7 +24,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-composer require appaydin/pd-menu
+composer require saldanhakun/pd-menu
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -24,7 +33,7 @@ of the Composer documentation.
 
 #### Step 2: Enable the Bundle
 
-With Symfony 4, the package will be activated automatically. But if something goes wrong, you can install it manually.
+With Symfony, the package will be activated automatically. But if something goes wrong, you can install it manually.
 
 Then, enable the bundle by adding it to the list of registered bundles
 in the `config/bundles.php` file of your project:
