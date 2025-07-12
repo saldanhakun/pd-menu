@@ -1,10 +1,15 @@
 # pdMenu Bundle
 Simple fast object-oriented menu maker for Symfony 6 and 7
 
-[![Packagist](https://img.shields.io/packagist/dt/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
-[![Github Release](https://img.shields.io/github/release/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
-[![license](https://img.shields.io/github/license/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/appaydin/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![Packagist](https://img.shields.io/packagist/dt/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
+[![Github Release](https://img.shields.io/github/release/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
+[![license](https://img.shields.io/github/license/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/appaydin/pd-menu.svg)](https://github.com/appaydin/pd-menu)
+
+[![Packagist](https://img.shields.io/packagist/dt/saldanhakun/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![Github Release](https://img.shields.io/github/release/saldanhakun/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![license](https://img.shields.io/github/license/saldanhakun/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/saldanhakun/pd-menu.svg)](https://github.com/saldanhakun/pd-menu)
 
 
 Disclaimer

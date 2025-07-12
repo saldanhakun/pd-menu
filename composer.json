@@ -19,7 +19,9 @@
   "require": {
     "php": "^8.2",
     "twig/twig": "*",
-    "symfony/event-dispatcher": "*"
+    "symfony/event-dispatcher": "*",
+    "symfony/config": "^7.3",
+    "symfony/dependency-injection": "^7.3"
   },
   "autoload": {
     "psr-4": {
