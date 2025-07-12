@@ -185,7 +185,7 @@ class Item implements ItemInterface
         return $this;
     }
 
-    public function getExtra(string $name, $default = false): mixed
+    public function getExtra(string $name, mixed $default = false): mixed
     {
         if (\is_array($this->extra) && isset($this->extra[$name])) {
             return $this->extra[$name];
@@ -229,7 +229,7 @@ class Item implements ItemInterface
         return $this;
     }
 
-    public function addChild($child, $order = null): ItemInterface
+    public function addChild(ItemInterface|string $child, ?int $order = null): ItemInterface
     {
         // Create New Item
         if (!$child instanceof ItemInterface) {
@@ -247,7 +247,7 @@ class Item implements ItemInterface
         return $child;
     }
 
-    public function addChildParent($child, $order = null): ItemInterface
+    public function addChildParent(ItemInterface|string $child, ?int $order = null): ItemInterface
     {
         return $this->parent->addChild($child, $order);
     }

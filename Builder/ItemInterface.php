@@ -31,7 +31,7 @@ interface ItemInterface extends \ArrayAccess
     /**
      * Set Item Array ID | Order ID.
      */
-    public function setId($id = null): self;
+    public function setId(?string $id = null): self;
 
     /**
      * Get Menu Name.
@@ -136,12 +136,12 @@ interface ItemInterface extends \ArrayAccess
     /**
      * Get Extra Data Menu Item.
      */
-    public function getExtra(string $name, $default = false);
+    public function getExtra(string $name, mixed $default = false): mixed;
 
     /**
      * Set Extra Data Menu Item.
      */
-    public function setExtra(string $name, $value): self;
+    public function setExtra(string $name, mixed $value): self;
 
     /**
      * Get Access Roles Menu Item.
@@ -166,12 +166,12 @@ interface ItemInterface extends \ArrayAccess
     /**
      * Add Child.
      */
-    public function addChild($child, $order = null): self;
+    public function addChild(ItemInterface|string $child, ?int $order = null): self;
 
     /**
      * Add Child to Parent Item.
      */
-    public function addChildParent($child, $order = null): self;
+    public function addChildParent(ItemInterface|string $child, ?int $order = null): self;
 
     /**
      * Get Parent Menu Item.
